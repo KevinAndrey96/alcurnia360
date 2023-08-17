@@ -1,0 +1,9 @@
+[14-Jun-2020 19:58:51 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in /home/alcurnia360/public_html/wp-includes/class-wp-query.php on line 766
+[28-Feb-2023 00:09:21 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/alcurnia360/public_html/wp-config.php on line 93
+[28-Feb-2023 00:09:21 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in /home/alcurnia360/public_html/wp-config.php on line 95
+[28-Feb-2023 00:09:21 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in /home/alcurnia360/public_html/wp-config.php on line 97
+[28-Feb-2023 00:09:24 UTC] PHP Warning:  Constant WP_DEBUG already defined in /home/alcurnia360/public_html/wp-config.php on line 93
+[28-Feb-2023 00:09:24 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in /home/alcurnia360/public_html/wp-config.php on line 95
+[28-Feb-2023 00:09:24 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in /home/alcurnia360/public_html/wp-config.php on line 97
+[28-Feb-2023 00:27:07 UTC] PHP Warning:  Use of undefined constant WP_CONTENT_DIR - assumed 'WP_CONTENT_DIR' (this will throw an Error in a future version of PHP) in /home/alcurnia360/public_html/wp-includes/load.php on line 141
+[28-Feb-2023 00:27:14 UTC] PHP Warning:  Use of undefined constant WP_CONTENT_DIR - assumed 'WP_CONTENT_DIR' (this will throw an Error in a future version of PHP) in /home/alcurnia360/public_html/wp-includes/load.php on line 141
