@@ -1,0 +1,18 @@
+{
+ "type": "TravelAgency",
+ "description": "Club de beneficios de viajes en Bogotá: vuelos, hoteles, tours y paquetes nacionales e internacionales con precios especiales para socios.",
+ "telephone": "+5712485030",
+ "email": "handshake@alcurnia360.com",
+ "address": {
+  "streetAddress": "Trasv 100 A # 80 A - 20, Local N 2 - 106, C.C. Portal de la 80",
+  "addressLocality": "Bogotá",
+  "addressCountry": "CO"
+ },
+ "areaServed": ["Bogotá", "Colombia"],
+ "languages": ["Spanish"],
+ "contacts": [
+  {"telephone": "+5712485030", "type": "customer service", "languages": ["Spanish"], "email": "handshake@alcurnia360.com"}
+ ],
+ "services": ["Vuelos", "Hoteles", "Tours y paquetes nacionales", "Tours y paquetes internacionales", "Periodos vacacionales", "Arma tu viaje"],
+ "hidden_h1": "Alcurnia 360: club de beneficios de viajes, vuelos, hoteles y planes en Bogotá"
+}

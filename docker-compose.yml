@@ -1,0 +1,51 @@
+services:
+  wordpress:
+    image: wordpress:php8.2-apache
+    container_name: alcurnia-wordpress
+    restart: unless-stopped
+    ports:
+      - "8082:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: alcurnia_user
+      WORDPRESS_DB_PASSWORD: alcurnia_password
+      WORDPRESS_DB_NAME: alcurnia_wp
+      WORDPRESS_TABLE_PREFIX: wp_
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mariadb:10.11
+    container_name: alcurnia-mariadb
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: alcurnia_wp
+      MYSQL_USER: alcurnia_user
+      MYSQL_PASSWORD: alcurnia_password
+      MYSQL_ROOT_PASSWORD: alcurnia_root_password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: alcurnia-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8083:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    depends_on:
+      - db
+
+volumes:
+  db_data:

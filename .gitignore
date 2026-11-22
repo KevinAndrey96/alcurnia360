@@ -1,0 +1,13 @@
+# WordPress Environment & Logs
+.env
+*.log
+wp-content/debug.log
+wp-content/uploads/cache/
+wp-content/litespeed/
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
