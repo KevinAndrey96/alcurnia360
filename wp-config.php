@@ -40,6 +40,13 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+// Dynamic Site URL definition to support Docker and various ports without redirect loops
+if ( isset( $_SERVER['HTTP_HOST'] ) ) {
+	$http_scheme = ( ! empty( $_SERVER['HTTPS'] ) && $_SERVER['HTTPS'] !== 'off' ) ? 'https://' : 'http://';
+	define( 'WP_HOME', $http_scheme . $_SERVER['HTTP_HOST'] );
+	define( 'WP_SITEURL', $http_scheme . $_SERVER['HTTP_HOST'] );
+}
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

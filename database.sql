@@ -2358,7 +2358,7 @@ CREATE TABLE `wp_users` (
 LOCK TABLES `wp_users` WRITE;
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
 INSERT INTO `wp_users` VALUES
-(1,'admin','$wp$2y$10$dFs26VsQ9sr3lT87mxs99..LqPMtSF7V0qkZJMORBx5vW3kGa9VA6','alcurnia360','ruben@feelagencia.net','','2020-02-08 19:25:47','',0,'admin');
+(1,'admin','0192023a7bbd73250516f069df18b500','admin','admin@travel-agency.local','','2020-02-08 19:25:47','',0,'Administrator');
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
 UNLOCK TABLES;
 

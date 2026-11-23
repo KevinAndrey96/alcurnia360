@@ -1,4 +1,4 @@
-# Turnkey WordPress Tourism & Travel Benefit Club Portal Template
+# Turnkey WordPress Tourism & Travel Agency Portal Template (wordpress-travel-agency)
 
 [![WordPress](https://img.shields.io/badge/WordPress-6.x%20%7C%207.x%20Ready-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://wordpress.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%20%7C%208.2%20%7C%208.3-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
@@ -59,8 +59,8 @@ Run the entire travel club portal locally with zero dependencies:
 
 ### 1. Clone the Repository
 ```bash
-git clone git@github.com-personal:KevinAndrey96/alcurnia360.git
-cd alcurnia360
+git clone git@github.com:KevinAndrey96/wordpress-travel-agency.git
+cd wordpress-travel-agency
 ```
 
 ### 2. Launch the Stack
@@ -76,7 +76,7 @@ Docker will:
 
 ### 3. Access the Applications
 - **Portal Storefront**: [http://localhost:8082](http://localhost:8082)
-- **WordPress Admin**: [http://localhost:8082/wp-admin](http://localhost:8082/wp-admin)
+- **WordPress Admin**: [http://localhost:8082/wp-admin](http://localhost:8082/wp-admin) (User: `admin`, Password: `admin123`)
 - **phpMyAdmin**: [http://localhost:8083](http://localhost:8083) (Server: `db`, User: `alcurnia_user`, Password: `alcurnia_password`)
 
 ---

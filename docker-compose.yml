@@ -1,7 +1,7 @@
 services:
   wordpress:
     image: wordpress:php8.2-apache
-    container_name: alcurnia-wordpress
+    container_name: travel-agency-wordpress
     restart: unless-stopped
     ports:
       - "8082:80"
@@ -19,7 +19,7 @@ services:
 
   db:
     image: mariadb:10.11
-    container_name: alcurnia-mariadb
+    container_name: travel-agency-mariadb
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: alcurnia_wp
@@ -37,7 +37,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:latest
-    container_name: alcurnia-phpmyadmin
+    container_name: travel-agency-phpmyadmin
     restart: unless-stopped
     ports:
       - "8083:80"
